@@ -23,3 +23,11 @@ Bonus:
 > 1 - cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
 
 > 2 -  aggiungere un altro bottone che permetta la modifica di un task gia' esistente
+
+Svolgimento:
+
+- inserisco in data() l'array di oggetti della lista
+- inserisco nel html il v-for con riferimento all'array oggetti
+- in methods scrivo la funzione per eliminare gli elementi della lista al click del pulsante
+- in methods scrivo la funzione per inserire punti nella lista attraverso imput testuale e premendo invio
+- inserisco i tag button e input nel dom per utilizzare le funzioni create
