@@ -10,9 +10,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section>
-        <h1>vue-todolist</h1>
+    <section id="app">
+        <h1>{{titolo}}</h1>
+        <ul v-for="(item, index) in todoList" :key="index">
+            <li :class="(item.done === true) ? 'true' : 'false' " @click="sbarratoInElenco(index)">{{item.content}}</li>
+        </ul>
     </section>
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- my script -->
     <script src="js/script.js"></script>
 </body>
